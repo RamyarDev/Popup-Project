@@ -6,7 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
-    
+<body class="h-screen flex justify-center bg-[#222]">
+  <div id="alertBox" class="w-[450px] h-[200px] scale-0 -translate-y-60 transition-all duration-500 flex flex-col justify-around bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.1)] rounded-2xl p-2.5">
+        <div class="text-center font-mono text-white flex flex-col justify-center gap-2.5">
+            <h1 class="text-3xl font-bold font-mono">Warning!</h1>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, esse?</p>
+        </div>
+        <div>
+            <button id="btn" class="w-full h-[30px] bg-white text-black rounded-full hover:opacity-90 active:opacity-35 active:scale-[0.9] cursor-pointer transition">Ok</button>
+        </div>
+    </div>
+    <script src="dist/index.js"></script>
 </body>
 </html>
